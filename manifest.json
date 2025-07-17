@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "popup",
+  "version": "1.0",
+  "description": "Press Alt + X after selecting a question.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
